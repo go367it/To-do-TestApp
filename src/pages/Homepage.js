@@ -13,19 +13,21 @@ const Homepage = () => {
       }}
       elevation={0}
     >
+      {/* taking input section  */}
       <Box
         sx={{
           display: "flex",
           gap: "20px",
         }}
       >
+        {/* input filed for entering the task  */}
         <TextField
           sx={{ outlined: "none" }}
           id="outlined-basic"
           label="Add Task"
           variant="outlined"
         />
-
+        {/* button for triggering the create task action */}
         <Button sx={{ outlined: "none" }} variant="contained" disableElevation>
           Add
         </Button>
