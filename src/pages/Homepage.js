@@ -6,33 +6,42 @@ import Paper from "@mui/material/Paper";
 
 const Homepage = () => {
   return (
-    <Paper
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-      }}
-      elevation={0}
-    >
-      {/* taking input section  */}
-      <Box
+    <>
+      <Paper
         sx={{
           display: "flex",
-          gap: "20px",
+          justifyContent: "center",
         }}
+        elevation={0}
       >
-        {/* input filed for entering the task  */}
-        <TextField
-          sx={{ outlined: "none" }}
-          id="outlined-basic"
-          label="Add Task"
-          variant="outlined"
-        />
-        {/* button for triggering the create task action */}
-        <Button sx={{ outlined: "none" }} variant="contained" disableElevation>
-          Add
-        </Button>
-      </Box>
-    </Paper>
+        {/* taking input section  */}
+        <Box
+          sx={{
+            display: "flex",
+            gap: "20px",
+            border: "1px solid gray",
+            borderRadius: "15px",
+            padding: "0.8rem",
+          }}
+        >
+          {/* input filed for entering the task  */}
+          <TextField
+            sx={{ outlined: "none" }}
+            id="outlined-basic"
+            label="Add Task"
+            variant="outlined"
+          />
+          {/* button for triggering the create task action */}
+          <Button
+            sx={{ outlined: "none", borderRadius: "0.5rem" }}
+            variant="contained"
+            disableElevation
+          >
+            Add
+          </Button>
+        </Box>
+      </Paper>
+    </>
   );
 };
 
