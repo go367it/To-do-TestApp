@@ -1,10 +1,13 @@
 import "./styles.css";
+import Homepage from "./pages/Homepage";
+import { TodoProvider } from "./context/TodoContext";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <TodoProvider>
+        <Homepage />
+      </TodoProvider>
     </div>
   );
 }
