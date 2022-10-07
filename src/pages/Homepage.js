@@ -63,9 +63,23 @@ const Homepage = () => {
       </Paper>
 
       {/* for showing the created task */}
+      <Paper sx={{
+        alignItems: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        marginTop: '1rem',
+        padding: '0.5rem'
+      }}
+      disableElevation 
+      >
+        <Box sx={{
+          maxWidth: '700px'
+        }} disableElevation>
       {tasks.map((element) => {
         return <TaskHolder key={element.id} task={element.task} />;
       })}
+      </Box>
+      </Paper>
     </>
   );
 };
